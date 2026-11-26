@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumbung Keluarga — Anggaran Rumah Tangga</title>
+<meta name="description" content="Lumbung Keluarga: aplikasi anggaran rumah tangga berbahasa Indonesia. Catat pemasukan dan pengeluaran, atur anggaran per kategori, pantau tagihan rutin dan target tabungan — semua tersimpan di perangkat Anda.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23123d25'/%3E%3Cpath d='M16 6 26 12v14H6V12L16 6z' fill='%23f4ead8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="30" height="30"><path d="M16 3 29 12v17H3V12L16 3z" fill="#f4ead8"/><path d="M16 7 25 13v13H7V13L16 7z" fill="#b45309"/><path d="M12 26v-8h8v8" fill="#f4ead8"/></svg>
+    </span>
+    <span class="brand-text"><strong>Lumbung Keluarga</strong><small>Anggaran rumah tangga</small></span>
+  </a>
+  <nav class="mainnav" aria-label="Navigasi utama">
+    <a href="#/" data-route="">Dashboard</a>
+    <a href="#/transaksi" data-route="transaksi">Transaksi</a>
+    <a href="#/anggaran" data-route="anggaran">Anggaran</a>
+    <a href="#/tagihan" data-route="tagihan">Tagihan</a>
+    <a href="#/target" data-route="target">Target</a>
+    <a href="#/laporan" data-route="laporan">Laporan</a>
+  </nav>
+  <div class="month-picker">
+    <label for="monthSelect">Bulan</label>
+    <select id="monthSelect" aria-label="Pilih bulan"></select>
+  </div>
+</header>
+<main id="view" class="view" aria-live="polite"></main>
+<footer class="pagefoot">
+  <p><strong>Lumbung Keluarga</strong> — keluarga fiktif Prasetyo, Malang. Data contoh tersimpan di perangkat Anda (localStorage) dan tetap bisa dibuka tanpa internet. <button type="button" class="linklike" id="resetData">Muat ulang data contoh</button></p>
+  <p class="fineprint">Semua angka dihitung dari transaksi yang sama di setiap halaman. Mata uang Rupiah (Rp).</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
